@@ -1,0 +1,40 @@
+body {
+    background-color: grey;
+    color: white;
+    font-family: "Arial", "Arial Black", "Verdana";
+}
+
+h1 {
+    color: blue;
+    font-size: 40pt;
+}
+
+h2 {
+    color: blue;
+}
+
+a {
+    color: red;
+}
+
+strong {
+    color: yellow;
+}
+
+a:link {
+    color: red;
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: red;
+    text-decoration: none;
+}
+
+p:first-letter {
+    font-size: 300%;
+}

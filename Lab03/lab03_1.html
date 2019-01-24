@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-euiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Hotel Rating Form</title>
+    <style type="text/css">
+        fieldset {
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Hotel Rating Form</h2>
+    <form action="" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="region" value="Asia">
+        <fieldset>
+            <legend>Hotel Details</legend>
+            Hotel Name:
+            <input type="text" name="hotelname">
+            <br>
+
+            Phone No:
+            <input type="text" name="phoneno" maxlength="8">
+            <br>
+
+            Booking By:
+            <input type="radio" value="I" checked>
+            Internet
+            <input type="radio" value="A">
+            Agency
+            <br>
+
+            Room Selected :
+            <select name="room" id="">
+                <option value="D">Double</option>
+                <option value="T">Twin</option>
+                <option value="S" selected>Single</option>
+            </select>
+            <br>
+
+            Stay Period : from
+            <input type="date">&nbsp;&nbsp;&nbsp; to
+            <input type="date">
+            <br>
+
+            Facilities :
+            <input type="checkbox" name="F1" value="G" checked>Gym
+            <input type="checkbox" name="F2" value="S">Swimming Pool
+            <input type="checkbox" name="F3" value="B">Business Centre
+        </fieldset>
+
+        <fieldset>
+            <legend>You experience in the hotel:</legend>
+            <textarea name="comment" cols="50" rows="4">In less 200 words...</textarea>
+            <br>
+
+            Send us any photo :
+            <input type="file" name="photo">
+            <br>
+
+            Rating :
+            <input type="number" min="1" max="5"> stars (Min 1, Max 5)
+        </fieldset>
+
+        Choose a colour
+        <input type="color">
+        for the tee as your gift after you send this form.
+        <br>
+
+        <button type="submit">Send Data</button>
+        <button type="reset">Clear Data</button>
+    </form>
+</body>
+
+</html>

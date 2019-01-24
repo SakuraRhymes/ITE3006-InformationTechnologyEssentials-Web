@@ -1,0 +1,18 @@
+body {
+    font-size: 15px;
+    color: blue;
+}
+
+p {
+    color: yellow;
+    background-color: pink;
+}
+
+h1,
+h2 {
+    color: blue;
+}
+
+h2 {
+    font-weight: bold;
+}

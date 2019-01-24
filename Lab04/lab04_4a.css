@@ -1,0 +1,10 @@
+body {
+    background-color: yellow;
+    font-size: 15px;
+}
+
+strong {
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+}

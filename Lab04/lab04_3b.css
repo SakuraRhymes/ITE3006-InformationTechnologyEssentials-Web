@@ -1,0 +1,26 @@
+body {
+    background-color: yellow;
+    font-size: 10px;
+    color: blue;
+}
+
+p {
+    color: yellow;
+    background-color: pink;
+    font-size: 20px;
+}
+
+h1,
+h2 {
+    color: blue;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+}
+
+h2 {
+    font-weight: bold;
+}
