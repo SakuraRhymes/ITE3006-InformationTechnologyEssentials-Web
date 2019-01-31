@@ -1,6 +1,6 @@
 body {
     background-color: black;
-    background-image: url(assets/picture/solar_system.png);
+    background-image: url(../assets/picture/solar_system.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -17,8 +17,9 @@ body {
 }
 
 #frame {
-    visibility: hidden;
+    width: 30%;
+    height: 60%;
     position: absolute;
-    top: 40%;
-    left: 0%;
+    top: 25%;
+    left: 50%;
 }
