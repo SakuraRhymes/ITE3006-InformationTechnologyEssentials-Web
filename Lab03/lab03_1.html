@@ -8,6 +8,7 @@
         fieldset {
             border-radius: 10px;
         }
+
     </style>
 </head>
 
@@ -26,9 +27,9 @@
             <br>
 
             Booking By:
-            <input type="radio" value="I" checked>
+            <input type="radio" name="bookby" value="I" checked>
             Internet
-            <input type="radio" value="A">
+            <input type="radio" name="bookby" value="A">
             Agency
             <br>
 
@@ -52,7 +53,7 @@
         </fieldset>
 
         <fieldset>
-            <legend>You experience in the hotel:</legend>
+            <legend>Your experience in the hotel:</legend>
             <textarea name="comment" cols="50" rows="4">In less 200 words...</textarea>
             <br>
 
@@ -65,12 +66,11 @@
         </fieldset>
 
         Choose a colour
-        <input type="color">
+        <input type="color" name="teecolor">
         for the tee as your gift after you send this form.
         <br>
-
-        <button type="submit">Send Data</button>
-        <button type="reset">Clear Data</button>
+        <input type="submit" value="Send Data">
+        <input type="reset" value="Clear Data">
     </form>
 </body>
 
