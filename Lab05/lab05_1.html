@@ -25,26 +25,31 @@
             display: block;
         }
 
-        .menu li a:hover {
+        .menu a:hover {
             background-color: lightgreen;
             color: black;
         }
 
         .menu .sub {
+            position: absolute;
             top: 38px;
             background-color: darkblue;
             box-shadow: 10px 10px 5px grey;
             transform: rotate(-10deg);
         }
-        
-        .sub .a:hover{
+
+        .menu .sub a:hover {
             background-color: lightblue;
         }
-        
-        .menu .sub li a:hover{
+
+        .menu .sub li {
             overflow: hidden;
             height: 0;
             transition: height 500ms;
+        }
+
+        .menu ul li:hover .sub li {
+            height: 40px;
         }
     </style>
 </head>
