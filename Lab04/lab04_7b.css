@@ -1,22 +1,22 @@
 body {
-    background-color: grey;
-    color: white;
     font-family: "Arial", "Arial Black", "Verdana";
-}
-
-h1 {
-    color: blue;
-    font-size: 40pt;
+    color: white;
+    background-color: grey;
 }
 
 h2 {
     color: blue;
 }
 
-a {
-    color: red;
+h1 {
+    font-size: 40pt;
+    color: blue;
 }
 
 strong {
     color: yellow;
+}
+
+a {
+    color: red;
 }

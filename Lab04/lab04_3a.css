@@ -1,3 +1,4 @@
+
 body {
     font-size: 15px;
     color: blue;
@@ -8,8 +9,7 @@ p {
     background-color: pink;
 }
 
-h1,
-h2 {
+h1, h2 {
     color: blue;
 }
 

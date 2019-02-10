@@ -1,29 +1,6 @@
-body {
-    background-color: grey;
-    color: white;
-    font-family: "Arial", "Arial Black", "Verdana";
-}
-
-h1 {
-    color: blue;
-    font-size: 40pt;
-}
-
-h2 {
-    color: blue;
-}
-
-a {
-    color: red;
-}
-
-strong {
-    color: yellow;
-}
-
 a:link {
     color: red;
-    text-decoration: none
+    text-decoration: none;
 }
 
 a:hover {
@@ -31,8 +8,8 @@ a:hover {
 }
 
 a:visited {
-    color: red;
-    text-decoration: none;
+    color: pink;
+    text-decoration: overline;
 }
 
 p:first-letter {
