@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+    <script type="text/javascript">
+        function getNum(s) {
+            var msg = "Enter the " + s + " number";
+            var n = parseFloat(prompt(msg));
+            while (isNaN(n)) {
+                alert("Not a number!");
+                n = parseFloat(prompt(msg));
+            }
+            return n;
+        }
+    </script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var x = getNum("1st");
+        var y = getNum("2nd");
+        var z = x + y;
+        window.alert("The result of x + y is: " + z.toFixed(2));
+    </script>
+</body>
+</html>

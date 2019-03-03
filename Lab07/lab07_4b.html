@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var x = window.prompt("Enter an integer for x");
+        if (isNaN(x)) {
+            alert("x is not a number!");
+        } else {
+            var y = window.prompt("Enter a floating point for y");
+            if (isNaN(y)) {
+                alert("y is not a number!");
+            } else {
+                var z = parseInt(x) + parseFloat(y);
+                window.alert("The result of x + y is: " + z.toFixed(2));
+            }
+        }
+    </script>
+</body>
+</html>
