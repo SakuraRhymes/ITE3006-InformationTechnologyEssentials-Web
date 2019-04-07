@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function print_result() {
+            /* --- (f) --- */
+            var name = document.f1.name.value;
+            var age = document.f1.age.value;
+            var url = document.f1.url.value;
+            var time = document.f1.time.value;
+            var color = document.f1.color.value;
+            var gender = document.f1.gender.value;
+            
+            alert("Name = " + name + 
+                  "\nAge = " + age + 
+                  "\nURl = " + url + 
+                  "\nWakeup Time = " + time + 
+                  "\nFavorite Color = " + color + 
+                  "\nGender = " + gender
+                 );
+            
+            var dse = "";
+            
+            for(i = 0; i < document.f1.dse.length; i++){
+                if(document.f1.dse[i].checked)
+                    dse += "\n" + document.f1.dse[i].value;
+            }
+            if(dse.length > 0)
+                alert("DSE Subjects: " + dse);
+            
+            var sport = document.f1.sport;
+            var index = sport.selectedIndex;
+            var sport_text = sport.options[index].text;
+            var sport_value = sport.options[index].value;
+            
+            alert("Favorite Sport = " + sport_text + " " + sport_value);
+  }
+        
+</script>
+</head>
+
+<body>
+    <form name="f1" onSubmit="print_result()">
+        <table border="1" style="border-collapse: collapse;">
+            <tr>
+                <td>Name</td>
+                <td>
+                    <!-- (a) -->
+                    <input type="text" name="name" pattern="^[A-Z][A-Za-z]*" title="Capital first character" required />
+                </td>
+            </tr>
+
+            <tr>
+                <td>Age</td>
+                <td>
+                    <!-- (b) -->
+                    <input type="" name="age" type="number" min="18" required />
+                </td>
+            </tr>
+
+            <tr>
+                <td>Website Address</td>
+                <td>
+                    <!-- (c) -->
+                    <input type="" name="url" title="http://domainName" type="url" required />
+                </td>
+            </tr>
+
+            <tr>
+                <td>Wake up Time</td>
+                <td>
+                    <!-- (d) -->
+                    <input type="text" title="HH:MM:SS" name="time" pattern="^([01]?\d|2[0-3]):[0-5]?\d:[0-5]?\d$" required />
+                </td>
+            </tr>
+
+            <tr>
+                <td>Favorite color in color code</td>
+                <td>
+                    <!-- (e) -->
+                    <input type="text" title="#hhh or #hhhhhh" name="color" pattern="^#([0-9a-fA-f]{3}|[0-9a-fA-f]{6})$" required />
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender" value="M" required="required" />Male
+                    <input type="radio" name="gender" value="F" />Female
+                </td>
+            </tr>
+
+            <tr>
+                <td>DSE Subjects</td>
+                <td>
+                    <input type="checkbox" name="dse" value="eng" />English Language
+                    <input type="checkbox" name="dse" value="chi" />Chinese Language
+                    <input type="checkbox" name="dse" value="math" />Mathematics
+                    <br />
+                    <input type="checkbox" name="dse" value="geo" />Geography
+                    <input type="checkbox" name="dse" value="csci" />Combined Science
+                </td>
+            </tr>
+
+            <tr>
+                <td>Favorite Sports</td>
+                <td>
+                    <select name="sport">
+                        <option value="">Please select one sport</option>
+                        <option value="fb">Football</option>
+                        <option value="sw">Swimming</option>
+                        <option value="jg">Jogging</option>
+                        <option value="cy">Cycling</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <br />
+
+        <input type="submit" value="Submit" />
+    </form>
+
+</body>
+
+</html>
