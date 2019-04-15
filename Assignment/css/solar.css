@@ -13,17 +13,24 @@ body {
 }
 
 .btn_Mercury {
-    top: 53.5%;
-    left: 21.2%;
+    top: 53%;
+    left: 21%;
     height: 35px;
     width: 35px;
 }
 
 .btn_Venus {
-    top: 52.5%;
+    top: 52%;
     left: 24.5%;
     height: 45px;
     width: 45px;
+}
+
+.btn_Earth {
+    top: 53%;
+    left: 28.5%;
+    height: 30px;
+    width: 30px;
 }
 
 .btn_Planet:hover ~ #iframe_planet {
