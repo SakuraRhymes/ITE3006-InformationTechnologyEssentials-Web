@@ -5,4 +5,29 @@ body {
     background-color: black;
 }
 
-.planet_pic {}
+.planet_pic {
+    float:left; 
+}
+container{
+    position: absolute;
+    top:48px;
+}
+.Earth{
+    color: cornflowerblue;
+}
+.Venus{
+    color: Khaki;
+}
+.Mercury{
+    color: aquamarine;
+}
+table {
+  border-collapse: collapse;
+  width: 70%;
+}
+
+td, th {
+  border: 1px solid #ccff99;
+  text-align: left;
+  padding: 8px;
+}
