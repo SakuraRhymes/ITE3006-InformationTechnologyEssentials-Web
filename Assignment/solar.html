@@ -6,25 +6,22 @@
     <title>Solar System</title>
     <link rel="stylesheet" href="css/solar.css" type="text/css">
     <link rel="stylesheet" href="css/topbar.css" type="text/css">
+    <script src="javascript/solar.js"></script>
 
 </head>
 
 <body>
 
-    <div class="topbar">
-        <a href="index.html">Home</a>
-        <a class="active" href="solar.html">Solar System</a>
-        <a href="">Planets</a>
-        <a href="quiz.html">Mini Quiz</a>
-    </div>
+<div class="topbar">
+    <a href="index.html">Home</a>
+    <a class="active" href="solar.html">Solar System</a>
+    <a href="">Planets</a>
+    <a href="quiz.html">Mini Quiz</a>
+</div>
 
-    <div class="btn_container">
-        <button class="btn_Mercury"></button>
-    </div>
-
-    <div class="frame_planets">
-        <iframe src="mercury.html" id="frame" frameborder="0"></iframe>
-    </div>
+<button class="btn_Planet btn_Mercury" onmouseover="onHoverChangeiframe('Mercury')"></button>
+<button class="btn_Planet btn_Venus" onmouseover="onHoverChangeiframe('Venus')"></button>
+<iframe src="mercury.html" id="iframe_planet"></iframe>
 
 
 </body>
